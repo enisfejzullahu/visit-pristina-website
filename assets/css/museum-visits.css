@@ -1,0 +1,153 @@
+/* Slideshow Container */
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Ensures alignment at the top */
+  width: 90%;
+  max-width: 1200px;
+}
+
+.slideshow-container {
+  width: 50%;
+  position: relative;
+  margin-top: 50px; /* Keeps the top margin for alignment */
+  margin-left: 100px; /* Left margin for spacing */
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.slide-radio {
+  display: none;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Added transition property */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slide-radio:checked + .slide {
+  opacity: 1;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-btn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #aaa;
+}
+
+.content {
+  width: 40%;
+  padding-left: 20px;
+  margin-top: 50px; /* Align with the top of the slideshow */
+}
+
+.h1-mu {
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.see-reviews-button {
+  background-color: #0056b3; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 15px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  font-size: 14px; /* Font size */
+  margin-top: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+}
+.see-reviews-button:hover {
+  background-color: #fff;
+  color: #0056b3; /* Darker blue background color on hover */
+}
+h2,
+p {
+  margin: 0 0 20px 0;
+}
+
+/* Button for Airbnb Page */
+
+.see-more {
+  background-color: #0056b3; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 15px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  font-size: 14px; /* Font size */
+  margin-top: 30px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.see-more:hover {
+  background-color: #6ca1af;
+  color: #fff; /* Darker blue background color on hover */
+}
+
+@media (max-width: 980px) {
+  .h1-mu {
+    font-size: 20px;
+  }
+  .main-container {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .slideshow-container {
+    text-align: center;
+    margin: auto;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .content {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    margin-top: 25px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+}

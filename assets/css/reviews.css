@@ -1,0 +1,70 @@
+.review-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.review-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.review {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.review-header h2 {
+  margin: 0;
+}
+
+.review-header .review-date {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.review-text {
+  line-height: 1.5;
+}
+
+/* Button styles */
+.click-here {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.click-here p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.click-here button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.click-here button:hover {
+  background-color: #0056b3;
+}

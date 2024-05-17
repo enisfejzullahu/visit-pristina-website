@@ -1,0 +1,54 @@
+.log-in-container {
+  width: 300px;
+  margin: 25px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.log-in-container h2 {
+  margin-top: 0;
+}
+
+.log-in-container form {
+  margin-bottom: 20px;
+}
+
+.log-in-container div {
+  margin-bottom: 10px;
+}
+
+.log-in-container input[type="text"],
+.log-in-container input[type="password"] {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.log-in-container input[type="submit"],
+.log-in-container input[type="reset"],
+.log-in-container input[type="button"] {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.log-in-container input[type="submit"]:hover,
+.log-in-container input[type="reset"]:hover,
+.log-in-container input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.log-in-container .clearfix {
+  overflow: hidden;
+}
+
+.log-in-container span.error {
+  color: red;
+  font-size: 14px;
+}
